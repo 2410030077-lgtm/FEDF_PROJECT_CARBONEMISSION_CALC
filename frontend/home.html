@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EcoTrack | Home</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <style>
+    body {
+      background: radial-gradient(circle at top, #1a1f1a, #0f120f);
+      color: #e8f5e9;
+      font-family: 'Poppins', sans-serif;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.5rem 3rem;
+      background: rgba(10, 20, 10, 0.8);
+      border-bottom: 1px solid #1b5e20;
+    }
+    nav h1 { color: #00e676; }
+    nav a {
+      color: #b9f6ca;
+      margin: 0 1rem;
+      text-decoration: none;
+    }
+    .hero {
+      text-align: center;
+      padding: 10vh 2rem;
+    }
+    .hero h2 {
+      color: #00e676;
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      max-width: 600px;
+      margin: 0 auto;
+      color: #c8e6c9;
+    }
+    button {
+      margin-top: 2rem;
+      background: #00c853;
+      color: white;
+      border: none;
+      padding: 1rem 2rem;
+      border-radius: 25px;
+      font-weight: 600;
+      cursor: pointer;
+      box-shadow: 0 0 10px #00e676;
+      transition: 0.3s;
+    }
+    button:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <h1>🌿 EcoTrack</h1>
+    <div>
+      <a href="#" id="logout">Logout</a>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <h2>Welcome to EcoTrack</h2>
+    <p>Monitor your carbon emissions and help the planet thrive. Start calculating your impact today!</p>
+    <button onclick="goToCalculator()">Go to Calculator</button>
+  </section>
+
+  <script>
+    const token = localStorage.getItem('auth_token');
+    if (!token) window.location.href = 'login.html';
+
+    document.getElementById('logout').addEventListener('click', () => {
+      localStorage.clear();
+      window.location.href = 'login.html';
+    });
+
+    function goToCalculator() {
+      window.location.href = 'calculator.html';
+    }
+  </script>
+</body>
+</html>

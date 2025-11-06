@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EcoTrack | Dashboard</title>
+  <link rel="stylesheet" href="assets/css/dashboard.css" />
+</head>
+<body>
+  <nav>
+    <h2>🌱 EcoTrack</h2>
+    <button id="logoutBtn">Logout</button>
+  </nav>
+
+  <main>
+    <h3>Welcome, <span id="userName"></span></h3>
+    <div class="card">
+      <h4>Emission Calculator</h4>
+      <input type="number" id="electricity" placeholder="Electricity (kWh)" />
+      <input type="number" id="fuel" placeholder="Fuel (Liters)" />
+      <input type="number" id="waste" placeholder="Waste (Kg)" />
+      <button id="calcBtn">Calculate</button>
+      <p id="result"></p>
+    </div>
+  </main>
+
+  <script src="assets/js/dashboard.js"></script>
+</body>
+</html>

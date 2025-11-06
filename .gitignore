@@ -1,0 +1,21 @@
+echo "# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environment
+venv/
+backend/venv/
+.env/
+.env.bak/
+
+# IDE settings
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+
+# Build files
+*.log
+" > .gitignore

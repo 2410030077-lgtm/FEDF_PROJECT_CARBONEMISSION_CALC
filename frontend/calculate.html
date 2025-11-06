@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculator | EcoTrack</title>
+  <link rel="stylesheet" href="Assets/CSS/style.css">
+</head>
+<body class="dark-mode">
+  <div class="container card">
+    <h2>🌍 Carbon Emission Calculator</h2>
+    <form id="calcForm">
+      <input type="number" id="distance" placeholder="Distance (km)" required>
+      <select id="vehicle">
+        <option value="car">Car</option>
+        <option value="bus">Bus</option>
+        <option value="train">Train</option>
+        <option value="bike">Bike</option>
+      </select>
+
+      <input type="number" id="electricity" placeholder="Electricity (kWh)" required>
+      <select id="diet">
+        <option value="vegan">Vegan</option>
+        <option value="vegetarian">Vegetarian</option>
+        <option value="non_veg">Non-Vegetarian</option>
+      </select>
+
+      <button type="submit" class="btn">Calculate</button>
+    </form>
+
+    <p id="result"></p>
+  </div>
+
+  <script src="Assets/JS/script.js"></script>
+</body>
+</html>

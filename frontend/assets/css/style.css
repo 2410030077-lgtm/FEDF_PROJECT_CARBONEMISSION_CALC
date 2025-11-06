@@ -1,0 +1,37 @@
+/* Reset & global */
+* { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', sans-serif; }
+body { background-color: #121212; color: #fff; }
+
+/* Dark mode */
+.dark-mode { background-color: #121212; color: #fff; }
+
+/* Container card */
+.container { max-width: 400px; margin: 3rem auto; padding: 2rem; background-color: #1e1e1e; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.4); }
+.card h2 { text-align: center; margin-bottom: 1.5rem; }
+
+/* Inputs */
+input[type="text"], input[type="email"], input[type="password"], input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  background-color: #2a2a2a;
+  border: 1px solid #444;
+  border-radius: 8px;
+  color: #fff;
+}
+
+input::placeholder { color: #888; }
+
+/* Buttons */
+button { padding: 10px 20px; border: none; border-radius: 8px; cursor: pointer; transition: 0.2s; }
+button.primary { background-color: #4CAF50; color: white; }
+button.secondary { background-color: #888; color: white; }
+button.ghost { background-color: transparent; border: 1px solid #888; color: #fff; }
+button:hover { opacity: 0.9; }
+
+/* Links */
+a { color: #4CAF50; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* Messages */
+#loginMessage, #signupMessage { margin-top: 1rem; font-weight: bold; }
